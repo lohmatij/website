@@ -88,7 +88,12 @@ a:focus {
     outline: 0;
 }
 
-.navbar-custom a {
+.navbar-brand-invisible {
+    visibility: hidden;
+	    
+}
+
+.navbar-custom a{
     color: #fff;
 }
 
@@ -130,6 +135,8 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 }
+
+
 
 .intro {
     display: table;
@@ -252,17 +259,20 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-	height: auto;
+.background_2 {
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+	height: auto;
 }
 
 #map {
@@ -279,7 +289,9 @@ a:focus {
     .download-section {
         padding: 100px 0;
     }
-
+	.row {
+        padding: 100px 0;
+    }
     #map {
         height: 400px;
         margin-top: 250px;
