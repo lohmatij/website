@@ -88,10 +88,6 @@ a:focus {
     outline: 0;
 }
 
-.navbar-brand-invisible {
-    visibility: hidden;
-	    
-}
 
 .navbar-custom a{
     color: #fff;
@@ -134,6 +130,11 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+	
+	.navbar-brand-invisible {
+	    visibility: hidden;
+	    
+	}
 }
 
 
@@ -273,6 +274,10 @@ a:focus {
     padding: 50px 0;
     color: #fff;
 	height: auto;
+}
+
+.row {
+    padding: 50px 0;
 }
 
 #map {
