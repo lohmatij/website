@@ -384,5 +384,5 @@ body {
 }
 
 .html5-watermark {
-	visibility: hidden;
+	visibility: hidden !important;
 }
