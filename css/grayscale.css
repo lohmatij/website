@@ -264,7 +264,8 @@ a:focus {
 }
 
 .background_2 {
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../img/downloads-bg.jpg) no-repeat center center scroll
+/*    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
