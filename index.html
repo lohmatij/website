@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -41,6 +41,7 @@
 
 	</script>
     
+    <!-- Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -52,7 +53,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="en">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -62,25 +63,35 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll navbar-brand-invisible" href="#page-top">
-                    <span class="light">Andrey Valentsov</span>
+                    <span class="light" lang="en">Andrey Valentsov</span>
+                    <span class="light" lang="ru">Андрей Валенцов</span>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+             
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#reel">Reel</a>
+                        <a  id="language-change-ru" lang="en">Русский</a>
+                        <a id="language-change-en" lang="ru">English</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#reel" lang="en">Reel</a>
+                        <a class="page-scroll" href="#reel" lang="ru">Рил</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#about" lang="en">About</a>
+                        <a class="page-scroll" href="#about" lang="ru">Информация</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio" lang="en">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio" lang="ru">Портфолио</a>
                     </li>
                 </ul>
             </div>
@@ -95,10 +106,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Andrey Valentsov</h1>
-						<h3>Cinematographer</h3>
+                        <h1 class="brand-heading" lang="en">Andrey Valentsov</h1>
+                        <h1 class="brand-heading" lang="ru">Андрей Валенцов</h1>
+
+                        <h3 lang="en">Cinematographer</h3>
+                        <h3 lang="ru">Оператор</h3>
 						<address>
-							<p><!--<a href="tel:+13102545610">+1-310-254-5610</a><br>-->
+							<p>
 							<a href="tel:+79312323008">+7(931)232-30-08</a><br> 
 							<a href="mailto:andrey@valentsov.com">andrey@valentsov.com</a></p>
 						</address>
@@ -126,7 +140,8 @@
     <section id="reel" class="container content-section text-center">
         <div class="row">
 			<div class="col-lg-12">
-				<h2>Showreel</h2>
+				<h2 lang="en">Showreel</h2>
+                <h2 lang="ru">Шоурил</h2>
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" src="//player.vimeo.com/video/247519976?badge=0&byline=0&portrait=0&title=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
@@ -140,12 +155,14 @@
             <div class="container">
                 
 	            <div class="col-lg-8 col-lg-offset-2">
-	                <h2>General information</h2>
-	                <p>I am Los Angeles/Moscow based cinematographer with considerable camera department work experience. I finihed my MFA in Cinematography in Saint Petersburg State University of Cinema and Television and also gained UCLA Extension Certificate in Entertainment Studies during my life in LA. I finished severall short films and one feature as a Director of Photography, but also have extensive camera operator and assistant camera experience from numerous (and award-winning) feature films.<br>Here is my CV:</p>
+	                <h2 lang="en">General information</h2>
+                    <h2 lang="ru">Общая информация</h2>
+	                <p lang="en">I am Los Angeles/Moscow based cinematographer with considerable camera department work experience. I finihed my MFA in Cinematography in Saint Petersburg State University of Cinema and Television and also gained UCLA Extension Certificate in Entertainment Studies during my life in LA. I finished severall short films and one feature as a Director of Photography, but also have extensive camera operator and assistant camera experience from numerous (and award-winning) feature films.<br>Here is my CV:</p>
+                    <p lang="ru">Как оператор я очень много путешествую между Москвой и Лос-Анджелесом. Я закончил Санкт-Петербургский Университет Кино и Телевидения а так же Entertainment Studies Certificate в University of California Los Angeles. Я снял около десятка коротких метров, несколько клипов, и так же у меня довольно большой опыт работы камерамэном. Фильмы, на которых я работал, были номинированы на Оскар, выигрывали крупные европейские и российские фестивали. <br>Вот мое резюме:</p>
 			<p>
-			<a href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf" class="btn btn-default btn-lg" download><i class="fa fa-file-text"></i> CV (English)</a>
+			<a href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf" class="btn btn-default btn-lg" download lang="en"><i class="fa fa-file-text"></i> CV (English)</a>
 			
-			<a href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf" class="btn btn-default btn-lg" download><i class="fa fa-file-text"></i> CV (На Русском)</a>
+			<a href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf" class="btn btn-default btn-lg" download lang="ru"><i class="fa fa-file-text"></i> CV (На Русском)</a>
 			</p>
 	            </div>
             </div>
@@ -156,28 +173,10 @@
     <section id="portfolio" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Trailers and Works</h2>
+                <h2 lang="en">Trailers and Works</h2>
+                <h2 lang="ru">Работы</h2>
             </div>
-            <!-- <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-				  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/AOUIzJup_t0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					  
-				</div>
-            </div>
-            <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-				  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/81849032"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					  
-				</div>
-            </div>
-            <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-				  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/78771738"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					  
-				</div>
-            </div>
-            <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-				  <iframe class="embed-responsive-item" src="//player.vimeo.com/video/74493176"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					  
-				</div>
-            </div>-->
+
 	     <div class="col-lg-6">
 		     <div class="embed-responsive embed-responsive-16by9">
 			     <iframe class="embed-responsive-item" src="//player.vimeo.com/video/193517577?badge=0&byline=0&portrait=0&title=1"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>					  
@@ -202,18 +201,6 @@
         </div>
     </section>
 
-    <!-- Map Section 
-    <div id="map"></div>
--->
-
-    <!-- Footer -->
-    <!-- <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Andrey Valentsov 2015</p>
-        </div>
-    </footer>
-		
-		-->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -224,12 +211,38 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
--->
-    <!-- Custom Theme JavaScript -->
+    <!-- Custom Theme JavaScript  -->
     <script src="js/grayscale.js"></script>
-		
+
+    <!-- language change $(this).data("switchlang").toString() -->
+    
+    <script>
+        title_en = "Andrey Valentsov. DP. Moscow/Los Angeles."
+        title_ru = "Андрей Валенцов. Оператор. Москва/Лос-Анджелес."
+        
+        // language detect 
+        if (navigator.languages && navigator.languages.length) {
+            NavigatorLanguage = navigator.languages[0];
+        } else {
+            NavigatorLanguage = navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
+        }
+        
+        if (NavigatorLanguage.includes('ru')) {
+            document.body.className = "ru";
+            document.title = title_ru;
+        }
+        
+        //buttons
+    
+        $('#language-change-ru').click(function() {
+            document.body.className = "ru";
+            document.title = title_ru;
+        });
+        $('#language-change-en').click(function() {
+            document.body.className = "en";
+            document.title = title_en;
+        });
+    </script>
 
 </body>
 
