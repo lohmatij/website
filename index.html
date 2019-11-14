@@ -54,6 +54,24 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="en">
+    
+    <!-- language change $(this).data("switchlang").toString() -->
+    <script>
+        title_en = "Andrey Valentsov. DP. Moscow/Los Angeles."
+        title_ru = "Андрей Валенцов. Оператор. Москва/Лос-Анджелес."
+        
+        // language detect 
+        if (navigator.languages && navigator.languages.length) {
+            NavigatorLanguage = navigator.languages[0];
+        } else {
+            NavigatorLanguage = navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
+        }
+        
+        if (NavigatorLanguage.includes('ru')) {
+            document.body.className = "ru";
+            document.title = title_ru;
+        }
+    </script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -214,23 +232,6 @@
     <!-- Custom Theme JavaScript  -->
     <script src="js/grayscale.js"></script>
 
-    <!-- language change $(this).data("switchlang").toString() -->
-    
-    <script>
-        title_en = "Andrey Valentsov. DP. Moscow/Los Angeles."
-        title_ru = "Андрей Валенцов. Оператор. Москва/Лос-Анджелес."
-        
-        // language detect 
-        if (navigator.languages && navigator.languages.length) {
-            NavigatorLanguage = navigator.languages[0];
-        } else {
-            NavigatorLanguage = navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
-        }
-        
-        if (NavigatorLanguage.includes('ru')) {
-            document.body.className = "ru";
-            document.title = title_ru;
-        }
         
         //buttons
     
