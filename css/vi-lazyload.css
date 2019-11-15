@@ -1,0 +1,54 @@
+/*!
+ * Vimeo LazyLoad 
+ * v1.0.2
+ * https://github.com/the-muda-organization/vimeo-lazyload
+ * MIT License
+ */
+
+/* vimeo lazyload container */
+.vi-lazyload{
+    width:100%;
+    position:relative!important;
+    overflow:hidden;
+    cursor:pointer;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+/* image thumbnail */
+.vi-lazyload-img{
+    width:100%!important;
+    display:block;
+}
+
+/* play-btn */
+.vi-lazyload-playbtn{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:1;
+    background-position:50%;
+    background-size:calc(35px + 10%) auto;
+    background-repeat:no-repeat;
+}
+
+/* play-btn:hover */
+.vi-lazyload-playbtn:hover{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='39' height='39' %3E%3Ccircle id='circle' r='19.5' cx='19.5' cy='19.5' fill='%23ffffff' opacity='0.7' /%3E%3Cpath id='arrow' opacity='0.9' d='m27.043499,21.25c1.025002,-0.569 1.025002,-2.049999 0,-2.625l-10.999998,-6.688c-0.994001,-0.550001 -2.231001,0.162001 -2.231001,1.313l0,13c0,1.155998 1.243999,1.862999 2.231001,1.313l10.999998,-6.313z'/%3E%3C/svg%3E");
+}
+
+
+/* iframe */
+.vi-lazyload iframe{
+    width:100%!important;
+    height:100%!important;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    border:0;
+}
+
