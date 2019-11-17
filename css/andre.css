@@ -34,30 +34,19 @@ body.ru :lang(en){
   -moz-osx-font-smoothing: grayscale;
 }
 
-.andre-play:before {
-  content: "\f04b";
-}
-.andre-play-circle:before {
-  content: "\f144";
-}
+
 .andre-facebook-square:before {
   content: "\f082";
 }
 .andre-instagram:before {
   content: "\f16d";
 }
-.andre-vimeo-v:before {
-  content: "\f27d";
-}
 .andre-imdb:before {
   content: "\f2d8";
-}
-.andre-facebook-f:before {
-  content: "\f39e";
 }
 .andre-vimeo:before {
   content: "\f40a";
 }
-.andre-play2:before {
-  content: "\ea1c";
+.andre-bars:before {
+  content: "\f0c9";
 }
