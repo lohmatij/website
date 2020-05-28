@@ -16,7 +16,7 @@
 
     <!-- Custom template CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
-    
+
     <!-- Custom css-->
     <link href="css/andre.css" rel="stylesheet">
 
@@ -31,21 +31,28 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<!-- Google analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	  ga('create', 'UA-58869568-1', 'auto');
-	  ga('send', 'pageview');
+        ga('create', 'UA-58869568-1', 'auto');
+        ga('send', 'pageview');
 
-	</script>
-    
+    </script>
+
     <!-- Lazyload -->
     <link href="css/vi-lazyload.css" rel="stylesheet">
-    
+
     <!-- Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -59,23 +66,24 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="en">
-    
+
     <!-- language change $(this).data("switchlang").toString() -->
     <script>
         title_en = "Andrey Valentsov. DP. Moscow/Los Angeles."
         title_ru = "Андрей Валенцов. Оператор. Москва/Лос-Анджелес."
-        
+
         // language detect 
         if (navigator.languages && navigator.languages.length) {
             NavigatorLanguage = navigator.languages[0];
         } else {
             NavigatorLanguage = navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
         }
-        
+
         if (NavigatorLanguage.includes('ru')) {
             document.body.className = "ru";
             document.title = title_ru;
         }
+
     </script>
 
     <!-- Navigation -->
@@ -92,9 +100,9 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-             
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                
+
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
@@ -134,33 +142,33 @@
 
                         <h3 lang="en">Cinematographer</h3>
                         <h3 lang="ru">Оператор</h3>
-						<address>
-							<p>
-							<a href="tel:+79312323008">+7(931)232-30-08</a><br> 
-							<a href="mailto:andrey@valentsov.com">andrey@valentsov.com</a></p>
-						</address>
-		                <ul class="list-inline banner-social-buttons">
-		                    <li>
-		                        <a href="http://www.imdb.com/name/nm6378195/" class="btn btn-default btn-lg">
+                        <address>
+                            <p>
+                                <a href="tel:+79312323008">+7(931)232-30-08</a><br>
+                                <a href="mailto:andrey@valentsov.com">andrey@valentsov.com</a></p>
+                        </address>
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="http://www.imdb.com/name/nm6378195/" class="btn btn-default btn-lg">
                                     <span class="andre-imdb"></span>
                                     <span class="network-name">IMDb</span></a>
-		                    </li>
-		                    <li>
-		                        <a href="https://vimeo.com/andreyvalentsov" class="btn btn-default btn-lg">
+                            </li>
+                            <li>
+                                <a href="https://vimeo.com/andreyvalentsov" class="btn btn-default btn-lg">
                                     <span class="andre-vimeo"></span>
                                     <span class="network-name">Vimeo</span></a>
-		                    </li>
-		                    <li>
-		                        <a href="https://www.facebook.com/valentsov" class="btn btn-default btn-lg">
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/valentsov" class="btn btn-default btn-lg">
                                     <span class="andre-facebook-square"></span>
                                     <span class="network-name">Facebook</span></a>
-		                    </li>
-		                    <li>
-		                        <a href="http://instagram.com/lohmatij/" class="btn btn-default btn-lg">
+                            </li>
+                            <li>
+                                <a href="http://instagram.com/lohmatij/" class="btn btn-default btn-lg">
                                     <span class="andre-instagram"></span>
                                     <span class="network-name">Instagram</span></a>
-		                    </li>		                    
-		                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -170,25 +178,29 @@
     <!-- About Section -->
     <section id="reel" class="container content-section text-center">
         <div class="row">
-			<div class="col-lg-12">
-				<h2 lang="en">Showreel</h2>
+            <div class="col-lg-12">
+                <h2 lang="en">Showreel</h2>
                 <h2 lang="ru">Шоурил</h2>
-				<div class="embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive embed-responsive-16by9">
                     <div class="vi-lazyload" data-id="247519976" data-thumb=""></div>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Download Section -->
     <section id="about" class="content-section text-center background_2">
         <div class="download-section">
             <div class="container">
-                
-	            <div class="col-lg-8 col-lg-offset-2">
-	                <h2 lang="en">General information</h2>
+
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 lang="en">General information</h2>
                     <h2 lang="ru">Общая информация</h2>
-	                <p lang="en">I am Los Angeles/Moscow based cinematographer with considerable camera department work experience. I finihed my MFA in Cinematography in Saint Petersburg State University of Cinema and Television and also gained UCLA Extension Certificate in Entertainment Studies during my life in LA. I finished severall short films and one feature as a Director of Photography, but also have extensive camera operator and assistant camera experience from numerous (and award-winning) feature films.<br>Here is my CV:</p>
+                    <p lang="en"   style="text-align: left; text-indent: 2em;">Andrey finished his MFA in Cinematography at Saint Petersburg State University of Cinema and Television and also gained a UCLA Extension Certificate in Entertainment Studies during his life in LA.
+                        <br>
+                        He finished one feature, 15 short films, and 6 music videos as a Director of Photography, and also has extensive camera operator experience. Andrey worked with acclaimed Russian directors, such as Alexei Balabanov, Andrey Konchalovsky, and Alexei German. The films he worked on were nominated on Oscar and won major European and Russian music festivals.
+                        <br>
+                        Here is his CV:</p>
                     <p lang="ru">
                         Закончил Санкт-Петербургский Университет Кино и Телевидения и Entertainment Studies Certificate в University of California Los Angeles. Работаю в любой точке мира.
                         <br>
@@ -197,12 +209,13 @@
                         Работаю как оператор-постановщик и как камерамен.
                         <br>
                         Вот мое резюме:
-                    </p>		<p>
-			<a href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf" class="btn btn-default btn-lg" download lang="en"><i class="fa fa-file-text"></i> CV (English)</a>
-			
-			<a href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf" class="btn btn-default btn-lg" download lang="ru"><i class="fa fa-file-text"></i> CV (На Русском)</a>
-			</p>
-	            </div>
+                    </p>
+                    <p>
+                        <a href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf" class="btn btn-default btn-lg" download lang="en"><i class="fa fa-file-text"></i> CV (English)</a>
+
+                        <a href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf" class="btn btn-default btn-lg" download lang="ru"><i class="fa fa-file-text"></i> CV (На Русском)</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -215,28 +228,28 @@
                 <h2 lang="ru">Работы</h2>
             </div>
 
-	     <div class="col-lg-6">
-		     <div class="embed-responsive embed-responsive-16by9">
-                 <div class="vi-lazyload" data-id="193517577" data-thumb=""></div>
-		     </div>
-	     </div>  
             <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-				    <div class="vi-lazyload" data-id="119676345" data-thumb=""></div>					  
-				</div>
-            </div> 
-            <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">
-                    <div class="vi-lazyload" data-id="142578316" data-thumb=""></div>	
-				</div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="vi-lazyload" data-id="193517577" data-thumb=""></div>
+                </div>
             </div>
-	     <div class="col-lg-6">
-				<div class="embed-responsive embed-responsive-16by9">	
-                    <div class="vi-lazyload" data-id="138541842" data-thumb=""></div>	
-				</div>
-            </div> 
-            
-			
+            <div class="col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="vi-lazyload" data-id="119676345" data-thumb=""></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="vi-lazyload" data-id="142578316" data-thumb=""></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="vi-lazyload" data-id="138541842" data-thumb=""></div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
@@ -253,10 +266,10 @@
     <!-- Custom Theme JavaScript  -->
     <script src="js/grayscale.js"></script>
 
-     <!-- Lazyload -->
+    <!-- Lazyload -->
     <script src="js/vi-lazyload.js"></script>
-  
-        
+
+
     <script>
         //buttons
         $('#language-change-ru').click(function() {
@@ -267,6 +280,7 @@
             document.body.className = "en";
             document.title = title_en;
         });
+
     </script>
 
 </body>
