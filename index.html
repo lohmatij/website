@@ -150,7 +150,9 @@
                   <a class="face-phone" href="tel:+79312323008"
                     >+7(931)232-30-08</a
                   ><br />
-                  <a href="mailto:andrey@valentsov.com">andrey@valentsov.com</a>
+                  <a class="face-email" href="mailto:andrey@valentsov.com"
+                    >andrey@valentsov.com</a
+                  >
                 </p>
               </address>
               <ul class="list-inline banner-social-buttons">
@@ -406,7 +408,14 @@
           key: event.type,
           value: 1,
         });
-        // alert(event.type);
+      });
+
+      $(".face-email").on("click copy", function (event) {
+        face_instance.action("9e63a799-b3d2-4bcf-a1b5-c1f98fabc180", {
+          key: event.type,
+          value: 1,
+        });
+        alert(event.type);
       });
     </script>
 
