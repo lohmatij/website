@@ -383,22 +383,42 @@
 
         <div class="col-lg-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <div class="vi-lazyload" data-id="341923023" data-thumb=""></div>
+            <div
+              class="vi-lazyload face-portfolio"
+              data-face="Region"
+              data-id="341923023"
+              data-thumb=""
+            ></div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <div class="vi-lazyload" data-id="119676345" data-thumb=""></div>
+            <div
+              class="vi-lazyload face-portfolio"
+              data-face="217ft"
+              data-id="119676345"
+              data-thumb=""
+            ></div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <div class="vi-lazyload" data-id="142578316" data-thumb=""></div>
+            <div
+              class="vi-lazyload face-portfolio"
+              data-face="Eternal Sunrise"
+              data-id="142578316"
+              data-thumb=""
+            ></div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="embed-responsive embed-responsive-16by9">
-            <div class="vi-lazyload" data-id="138541842" data-thumb=""></div>
+            <div
+              class="vi-lazyload face-portfolio"
+              data-face="Room Tone"
+              data-id="138541842"
+              data-thumb=""
+            ></div>
           </div>
         </div>
       </div>
@@ -449,11 +469,16 @@
           key: $(this).data("face"),
           value: 1,
         });
-        // alert($(this).data('face'));
-        // return false;
       });
 
-      
+      $(".face-portfolio").click(function (event) {
+        face_instance.action("5989a471-7728-41dc-bcc8-5522d4ae9d15", {
+          key: $(this).data("face"),
+          value: 1,
+        });
+        // alert($(this).data("face"));
+        // return false;
+      });
     </script>
 
     <script>
