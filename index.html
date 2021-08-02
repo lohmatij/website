@@ -432,40 +432,43 @@
 
     <script src="https://facetime.valentsov.com/facetime.js"></script>
     <script>
-      const face_instance = ackeeTracker.create(
-        "https://facetime.valentsov.com",
-        {
-          detailed: true,
-          ignoreLocalhost: true,
-        }
-      );
-      face_instance.record("0668d695-2ae8-4554-b5d1-a3741211bb5f");
+      $(document).ready(function () {
+        const face_instance = ackeeTracker.create(
+          "https://facetime.valentsov.com",
+          {
+            detailed: true,
+            ignoreLocalhost: true,
+          }
+        );
+        face_instance.record("0668d695-2ae8-4554-b5d1-a3741211bb5f");
 
-      $(".face-cv").on("click contextmenu webkitmouseforcedown", function (event) {
-        var face_key = $(this).data("face");
-        if (event.type != "click") {
-            face_key = face_key + " " + event.type;
-        }
-        face_instance.action("4e73ce8e-b177-402a-afa5-82ba5f9a91b2", {
-          key: face_key,
-          value: 1,
-        });
-      });
+        $(".face-cv").on(
+          "click contextmenu webkitmouseforcedown",
+          function (event) {
+            var face_key = $(this).data("face");
+            if (event.type != "click") {
+              face_key = face_key + " " + event.type;
+            }
+            face_instance.action("4e73ce8e-b177-402a-afa5-82ba5f9a91b2", {
+              key: face_key,
+              value: 1,
+            });
+          }
+        );
 
-      $(".face-social").click(function (event) {
-        face_instance.action("421e82c4-b3d2-46b4-b7e4-c99f2aee82f1", {
-          key: $(this).data("face"),
-          value: 1,
+        $(".face-social").click(function (event) {
+          face_instance.action("421e82c4-b3d2-46b4-b7e4-c99f2aee82f1", {
+            key: $(this).data("face"),
+            value: 1,
+          });
         });
-        alert($(this).data("face"));
-      });
 
-      $(".face-showreel").click(function (event) {
-        face_instance.action("53a0d01c-118c-4844-adb5-f486205e4fcb", {
-          key: $(this).data("face"),
-          value: 1,
+        $(".face-showreel").click(function (event) {
+          face_instance.action("53a0d01c-118c-4844-adb5-f486205e4fcb", {
+            key: $(this).data("face"),
+            value: 1,
+          });
         });
-      });
 
         $(".face-showreel").click(function (event) {
           face_instance.action("53a0d01c-118c-4844-adb5-f486205e4fcb", {
@@ -505,7 +508,7 @@
 
     <script>
       //buttons
-      $(function () {
+      $( document ).ready(function() {
         $("#language-change-ru").click(function () {
           document.body.className = "ru";
           document.title = title_ru;
