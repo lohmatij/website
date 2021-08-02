@@ -375,9 +375,14 @@
       );
       face_instance.record("d631a27e-3981-48b4-9e9c-2a8ce709a0c8");
 
-      $(".face-cv").click(function (event) {
+      $(".face-cv").on("click contextmenu webkitmouseforcedown", function (event) {
+        var face_key = $(this).data("face");
+        if (event.type != "click") {
+            face_key = face_key + " " + event.type;
+        }
+        alert(event.type);
         face_instance.action("a05f77db-1875-4d10-a0cd-03ee43ab29e7", {
-          key: $(this).data("face"),
+          key: face_key,
           value: 1,
         });
       });
@@ -403,19 +408,18 @@
         });
       });
 
-      $(".face-phone").on("click copy", function (event) {
+      $(".face-phone").on("click copy webkitmouseforcedown", function (event) {
         face_instance.action("6e833514-8f14-4c05-82fd-5ec51a49cafd", {
           key: event.type,
           value: 1,
         });
       });
 
-      $(".face-email").on("click copy", function (event) {
+      $(".face-email").on("click copy webkitmouseforcedown", function (event) {
         face_instance.action("9e63a799-b3d2-4bcf-a1b5-c1f98fabc180", {
           key: event.type,
           value: 1,
         });
-        alert(event.type);
       });
     </script>
 
