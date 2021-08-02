@@ -145,8 +145,6 @@
       title_ru = "Андрей Валенцов. Оператор. Москва/Лос-Анджелес.";
 
       // language detect
-        // language detect 
-      // language detect
       if (navigator.languages && navigator.languages.length) {
         NavigatorLanguage = navigator.languages[0];
       } else {
@@ -342,13 +340,28 @@
               Работаю как оператор-постановщик и как камерамен.
             </p>
             <p lang="ru" style="margin-bottom: 0.5em">Вот мое резюме:</p>
-                        <a href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf" class="btn btn-default btn-lg" download lang="en"><i class="fa fa-file-text"></i> CV (English)</a>
+            <p>
+              <a
+                href="/assets/Andrey%20Valentsov%20CV%20Eng.pdf"
+                class="btn btn-default btn-lg face-cv"
+                download
+                lang="en"
+                data-face="Eng"
+                ><i class="fa fa-file-text"></i> CV (English)</a
+              >
 
-                        <a href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf" class="btn btn-default btn-lg" download lang="ru"><i class="fa fa-file-text"></i> CV (На Русском)</a>
-                    </p>
-                </div>
-            </div>
+              <a
+                href="/assets/Andrey%20Valentsov%20CV%20Rus.pdf"
+                class="btn btn-default btn-lg face-cv"
+                download
+                lang="ru"
+                data-face="Rus"
+                ><i class="fa fa-file-text"></i> CV (На Русском)</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
@@ -382,7 +395,6 @@
       </div>
     </section>
 
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -398,6 +410,25 @@
     <!-- Lazyload -->
     <script src="js/vi-lazyload.js"></script>
 
+    <script src="https://facetime.valentsov.com/facetime.js"></script>
+    <script>
+      const face_instance = ackeeTracker
+        .create("https://facetime.valentsov.com", {
+          detailed: true,
+          ignoreLocalhost: true,
+        });
+        face_instance.record("25583799-f124-4dcd-abc7-663f4755e9da");
+
+        $(".face-cv").click(function (event) {
+          face_instance.action('a05f77db-1875-4d10-a0cd-03ee43ab29e7',{
+            key: ($(this).data('face')),
+            value: 1
+          });
+          // alert($(this).data('cv'));
+          return false;
+        })
+        
+    </script>
 
     <script>
       //buttons
