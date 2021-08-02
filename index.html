@@ -446,7 +446,6 @@
         if (event.type != "click") {
             face_key = face_key + " " + event.type;
         }
-        alert(event.type);
         face_instance.action("4e73ce8e-b177-402a-afa5-82ba5f9a91b2", {
           key: face_key,
           value: 1,
@@ -458,6 +457,7 @@
           key: $(this).data("face"),
           value: 1,
         });
+        alert($(this).data("face"));
       });
 
       $(".face-showreel").click(function (event) {
