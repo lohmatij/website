@@ -234,7 +234,8 @@
                 <li>
                   <a
                     href="http://www.imdb.com/name/nm6378195/"
-                    class="btn btn-default btn-lg"
+                    class="btn btn-default btn-lg face-social"
+                    data-face="IMDb"
                   >
                     <span class="andre-imdb"></span>
                     <span class="network-name">IMDb</span></a
@@ -243,7 +244,8 @@
                 <li>
                   <a
                     href="https://vimeo.com/andreyvalentsov"
-                    class="btn btn-default btn-lg"
+                    class="btn btn-default btn-lg face-social"
+                    data-face="Vimeo"
                   >
                     <span class="andre-vimeo"></span>
                     <span class="network-name">Vimeo</span></a
@@ -252,16 +254,18 @@
                 <li>
                   <a
                     href="https://www.facebook.com/valentsov"
-                    class="btn btn-default btn-lg"
+                    class="btn btn-default btn-lg face-social"
+                    data-face="Facebook"
                   >
                     <span class="andre-facebook-square"></span>
-                    <span class="network-name">Facebook</span></a
+                    <span class="network-name ">Facebook</span></a
                   >
                 </li>
                 <li>
                   <a
                     href="http://instagram.com/lohmatij/"
-                    class="btn btn-default btn-lg"
+                    class="btn btn-default btn-lg face-social"
+                    data-face="Instagram"
                   >
                     <span class="andre-instagram"></span>
                     <span class="network-name">Instagram</span></a
@@ -426,7 +430,16 @@
           });
           // alert($(this).data('cv'));
           // return false;
-        })
+        });
+
+        $(".face-social").click(function (event) {
+          face_instance.action('99fe6ca5-4b26-40ac-ab62-2b613281497c',{
+            key: ($(this).data('face')),
+            value: 1
+          });
+          // alert($(this).data('face'));
+          // return false;
+        });
         
     </script>
 
