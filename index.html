@@ -147,7 +147,9 @@
               <h3 lang="ru">Оператор</h3>
               <address>
                 <p>
-                  <a href="tel:+79312323008">+7(931)232-30-08</a><br />
+                  <a class="face-phone" href="tel:+79312323008"
+                    >+7(931)232-30-08</a
+                  ><br />
                   <a href="mailto:andrey@valentsov.com">andrey@valentsov.com</a>
                 </p>
               </address>
@@ -397,8 +399,14 @@
           key: $(this).data("face"),
           value: 1,
         });
-        // alert($(this).data("face"));
-        // return false;
+      });
+
+      $(".face-phone").on("click copy", function (event) {
+        face_instance.action("6e833514-8f14-4c05-82fd-5ec51a49cafd", {
+          key: event.type,
+          value: 1,
+        });
+        // alert(event.type);
       });
     </script>
 
