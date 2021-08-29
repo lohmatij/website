@@ -440,7 +440,7 @@
             ignoreLocalhost: true,
           }
         );
-        face_instance.record("0668d695-2ae8-4554-b5d1-a3741211bb5f");
+        face_instance.record("18b8973b-1eac-4566-b127-bdbc95f6e8bb");
 
         $(".face-cv").on(
           "click contextmenu webkitmouseforcedown",
@@ -449,7 +449,7 @@
             if (event.type != "click") {
               face_key = face_key + " " + event.type;
             }
-            face_instance.action("4e73ce8e-b177-402a-afa5-82ba5f9a91b2", {
+            face_instance.action("ff6ac57d-f1e5-4c32-9348-268ea7ac435f", {
               key: face_key,
               value: 1,
             });
@@ -457,28 +457,21 @@
         );
 
         $(".face-social").click(function (event) {
-          face_instance.action("421e82c4-b3d2-46b4-b7e4-c99f2aee82f1", {
+          face_instance.action("d0ebee50-e400-4b30-8453-15a2b48607c5", {
             key: $(this).data("face"),
             value: 1,
           });
         });
 
         $(".face-showreel").click(function (event) {
-          face_instance.action("53a0d01c-118c-4844-adb5-f486205e4fcb", {
-            key: $(this).data("face"),
-            value: 1,
-          });
-        });
-
-        $(".face-showreel").click(function (event) {
-          face_instance.action("53a0d01c-118c-4844-adb5-f486205e4fcb", {
+          face_instance.action("cfc8c8f0-dbde-4b64-9885-5759f4db7c77", {
             key: $(this).data("face"),
             value: 1,
           });
         });
 
         $(".face-portfolio").click(function (event) {
-          face_instance.action("455a035f-4810-4251-8fc8-dbe7bd90522b", {
+          face_instance.action("5a6dd487-99a2-4f13-856f-e4e19e095373", {
             key: $(this).data("face"),
             value: 1,
           });
@@ -487,7 +480,7 @@
         $(".face-phone").on(
           "click copy webkitmouseforcedown",
           function (event) {
-            face_instance.action("7d3f4618-76f8-431f-99eb-1acf4941993e", {
+            face_instance.action("68e46f28-1c32-4048-bda6-d2d548207cd3", {
               key: event.type,
               value: 1,
             });
@@ -497,7 +490,7 @@
         $(".face-email").on(
           "click copy webkitmouseforcedown",
           function (event) {
-            face_instance.action("12a1958a-0ab9-4eb9-9af0-4fe27f9d7bdd", {
+            face_instance.action("f4572ec4-82b4-4762-ac10-4e71c1f1ae10", {
               key: event.type,
               value: 1,
             });
