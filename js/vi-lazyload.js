@@ -21,7 +21,7 @@
         
         //image - thumbnail
         vi_image.classList.add('vi-lazyload-img');
-        vi_image.src = 'img/vimeo/' + data_id + data_thumb + '.jpg'; //https://i.vimeocdn.com/video/611384407.webp?mw=700&mh=392
+        vi_image.src = 'img/vimeo/' + data_id + '.jpg'; //https://i.vimeocdn.com/video/611384407.webp?mw=700&mh=392
         vi_image.alt = '';
         
         //append thumbails after they are loaded

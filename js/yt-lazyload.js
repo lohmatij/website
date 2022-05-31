@@ -21,9 +21,9 @@
         template_iframe,
         
         settings_observer_rootMargin    = '200px 0px',                  //Intersection Observer API option - rootMargin (Y, X)
-        settings_thumb_base_url = 'https://img.youtube.com/vi/',
-        //settings_thumb_base_url         = 'https://raw.githubusercontent.com/the-muda-organization/youtube-lazyload/master/demo-img/',     //Base URL where thumbnails are stored
-        settings_thumb_extension        = 'jpg';                       //Thumbnail extension
+        settings_thumb_base_url = 'https://valentsov.com/img/yt/';
+        //settings_thumb_base_url = 'https://img.youtube.com/vi/',      //For YouTube Thumbs
+        //settings_thumb_extension        = 'jpg';                      //Thumbnail extension
         
     
     
@@ -86,8 +86,8 @@
                     this_wrap.append(this_content);
                     
                     //background-image
-                    //this_content.style.setProperty('--yt-lazyload-img','url("' + settings_thumb_base_url + this_data_id + this_data_thumb + '.' + settings_thumb_extension + '")');
-                    this_content.style.setProperty('--yt-lazyload-img','url("' + settings_thumb_base_url + this_data_id + '/maxresdefault.jpg")');
+                    this_content.style.setProperty('--yt-lazyload-img','url("' + settings_thumb_base_url + this_data_id + '.jpg")');
+                    //this_content.style.setProperty('--yt-lazyload-img','url("' + settings_thumb_base_url + this_data_id + '/maxresdefault.jpg")'); //For YouTube Thumbs
                     
                     //play btn
                     this_playbtn = template_playbtn.cloneNode();
@@ -103,7 +103,7 @@
                     //onclick create iframe
                     this_playbtn.addEventListener('click',function(){
                         this_iframe     = template_iframe.cloneNode();
-                        this_iframe.src = 'https://www.youtube.com/embed/' + this_data_id + '?autoplay=1';
+                        this_iframe.src = 'https://www.youtube.com/embed/' + this_data_id + '?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3';
                         this_content.append(this_iframe);
                     });
                     
